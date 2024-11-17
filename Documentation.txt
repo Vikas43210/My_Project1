@@ -1,0 +1,21 @@
+[The whole  porfolia basically  made  with html and  css  only  under the guidence that provided by CoderArmy hackthon documentation]
+
+1>I have  created  a porfolia  website  with  fully responsive
+where  in header  section created a  header navbar  with hamburger
+>>inside that i have  used anchor  tag which represent  each section in  website
+
+2>>the  site  is  divided  in  various  section  each section  is  important  where  it show  it  
+crucial  meaning
+
+3>>Animation  in the  pertfolia websites  wwe have  crearted  Animation which  show  website
+look  more  interactive  and 
+
+4>>section are  diveded in the  form of  projects  ,skills, about me  , footer
+
+5>Responsive ness  i have used mediaquery and many more
+
+6>Fotter  section  is  basically  ally  about  the  queries  so  there  is  any  query user
+can submit there  problem  in contact form
+
+
+=>>>>>>>>>>>>>>>Thank you  that  all about  have a  good day
