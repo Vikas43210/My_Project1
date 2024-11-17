@@ -1,0 +1,516 @@
+/* google  fonts used */
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+/*  *to fix default  margin and  padding we do 0*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+
+/* navigation bar */
+
+.menu{
+    margin: 0 30px 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav{
+    font-family: "Doto", sans-serif;
+    font-weight: 700;
+    
+    
+}
+
+.menu a{
+    clear: right;
+    text-decoration: none;
+    color: white;
+    margin:0 10px;
+    line-height: 70px;
+}
+
+.navcolor{
+    /* background: linear-gradient(90deg, #FF7E5F, #FEB47B); */
+    background-color:  rgb(13, 5, 5);
+  
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.logo{
+    display: inline-block;
+    height: 50px;
+    width: 20px;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    left: 10vw;
+   
+}
+
+.logo img{
+    height: 5vh;
+    width: 5vw;
+    border-radius: 80vw 85vw 80vw 85vw;
+    cursor: pointer;
+   
+}
+
+.logo{
+    transform-origin: 0%;
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+/* animation of the logo we  done  here  */
+@keyframes movement {
+    0%{
+        left:0;
+       transform: rotate(0deg);
+    }
+    50%{
+        left:30;
+       transform: rotate(90deg);
+    }
+    75%{
+        left:60;
+       transform: rotate(180deg);
+    }
+
+    100%{
+        left: 100;
+        transform: rotate(360deg);
+    }
+
+}
+/* animation ends  here */
+
+
+.menu a:hover{
+   animation-name: underline;
+   animation-duration: 3s;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+   
+}
+/* section2  this  code all Marquee code  written*/
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 10px 0;
+  }
+
+  .card1 {
+    display: inline-block; 
+    margin: 0 10px; 
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+  }
+/* code  for both  front  card  and  back */
+  .card1 .card-front,
+  .card1 .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .card1 .card-back {
+    background: linear-gradient(135deg, #34e89e, #0f3443);
+    transform: rotateY(180deg);
+  }
+
+  .card1:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+
+  .card1:hover .card-back {
+    transform: rotateY(0);
+  }
+
+  .card_font1 img{
+      width: 100%;
+      height: 100%;
+      
+
+  }
+  /* section3  code  that show  profile  */
+#hero {
+    /* background: linear-gradient(120deg, #6c63ff, #c1c8e4); */
+    background-color:  rgb(13, 5, 5);
+    /* background-image: url('./images/background_img.jpg'); */
+    color: white;
+    text-align: center !important;
+    padding: 20vh 4vw;
+  }
+  .hero-container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .hero-container p{
+    text-align: center;
+  }
+  #hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  #hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  .btn {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: white;
+    color: #6c63ff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .btn:hover {
+    background: #f2f2f2;
+  }
+
+  /* section3  code for  all abpout education */
+  .maincard{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    /* flex-wrap: wrap; */
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* overflow: hidden; */
+    width: 40%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;
+  }
+  .card img{
+    width: 100%;
+    height: 20%;
+    /* object-fit: cover; */
+  }
+  
+  .card h4,p{
+    text-align: justify;
+    margin: 0.9%;
+    font-family: sans-serif;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px black;
+  }
+  
+  .card-content {
+    padding: 5%;
+    text-align: center;
+  }
+  
+  .card-content h2 {
+    margin: 0 0 2%;
+    color: #333;
+  }
+  
+  .card-content p {
+    margin: 0;
+    color: #666;
+  }
+
+/* section4 */
+#projects {
+    padding: 50px 20px;
+    /* background:red; */
+
+   
+  }
+  #projects marquee{
+    font-size: 200%;
+    font-family: sans-serif;
+    font-weight: bolder;
+  }
+  .projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .project-item {
+    background: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+  }
+  .project-item h3 {
+    font-size: 1.5rem;
+    color: #6c63ff;
+    display: flex;
+  }
+  .project-item p {
+    font-size: 1rem;
+    margin: 2%;
+    color: #555;
+    text-align: justify
+  }
+  .project-item img{
+    height: 60%;
+    width: 100%;
+  }
+  /* fotter csss */
+/* General Footer Styles */
+footer {
+    background-color: black;
+    font-family:  sans-serif !important;
+    color: Black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-bar {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border-top: 2px solid #61dafb;
+    border-bottom: 2px solid #61dafb;
+  }
+  
+  .footer-bar h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  /* Form Styles */
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #contact-form label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #contact-form input:focus,
+  #contact-form textarea:focus {
+    outline: none;
+    border: 2px solid #61dafb;
+  }
+  
+  #contact-form button {
+    /* background-color: #61dafb; */
+    color: #282c34;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact-form button:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .footer-bar {
+      padding: 10px;
+    }
+  
+    #contact-form input,
+    #contact-form textarea {
+      font-size: 1em;
+    }
+  
+    #contact-form button {
+      font-size: 1em;
+    }
+  }
+  
+
+
+/* here  is  the responsive  code written for each element */
+@keyframes underline {
+    0%{
+        text-decoration: underline;
+    }
+    50%{
+        text-decoration: overline;
+    }
+    100%{
+        text-decoration: underline ;
+    }
+}
+
+/* span{
+    color:#54D17A;
+} */
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;   
+}
+
+#toggle{
+    display: none;
+}
+
+
+@media (max-width:475px) {
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        text-align: center;
+        width:100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+
+    .logo img{
+        height: 3vh;
+        width: 6vw;
+        border-radius: 80vw 80vw 80vw 80vw;
+        cursor: pointer;
+       
+    }
+    
+}
+
+  .card{
+    flex-wrap: wrap;
+  }
+
+
+h1, .year, footer {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: white;
+}
+
+.year {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+  color: #cccccc;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Project Card */
+.project-card {
+  background: #333333;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-card h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  padding: 0 10px 15px;
+  color: #cccccc;
+}
+
+.projects-grid .project-card #images{
+  width: 50%;
+  height: 50%;
+}
+
+/* Footer */
+footer {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #999999;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .year {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.8rem;
+  }
+}

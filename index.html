@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolia_Website</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!-- navigation bar with hamburger -->
+    <nav>
+        <div class="nav navcolor">
+           
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+            <div class="logo">
+                <img src="./images/image_traingle1.avif" alt="">
+            </div>
+            <!-- anchor tags represent sections -->
+                <a href="#home">Home</a>
+                <a href="#hero">About Me</a>
+                <a href="#section3">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#footer">Contacts</a>
+            
+            </div>
+        </div>
+    </nav>
+    <!-- interactive animation with  marquee tag-->
+    <section id="home">
+        <!-- marquee tags with  animation -->
+        <marquee behavior="scroll" direction="left" scrollamount="10" class="marquee">
+          <div class="card1">
+            <div class="card-front card_font1">
+              <img src="./images/hacker1.jpg"/>
+              
+            </div>
+            <div class="card-back">
+              <h2>Welcome!</h2>
+             
+            </div>
+          </div>
+          <div class="card1 card_font1">
+            <div class="card-front">
+              <img src="./images/hacker2.jpg"/>
+            </div>
+            <div class="card-back">
+              <h2>To My!</h2>
+              
+            </div>
+          </div>
+          <div class="card1 card_font1">
+            <div class="card-front">
+              <img src="./images/hacker3.jpg"/>
+            </div>
+            <!-- cards  back  2 here -->
+            <div class="card-back">
+              <h2>Portfolia!</h2>
+              
+            </div>
+          </div>
+          <div class="card1 card_font1">
+            <div class="card-front">
+              <img src="./images/hacker4.jpg"/>
+            </div>
+            <!-- cards  back  here -->
+            <div class="card-back">
+              <h2>Thank You!</h2>
+              
+            </div>
+          </div>
+          <div class="card1 card_font1">
+            <div class="card-front">
+              <img src="./images/hacker5.jpg"/>
+            </div>
+            <!-- cards back -->
+            <div class="card-back">
+              <h2>for Watching!</h2>
+              
+            </div>
+          </div>
+          <div class="card1 card_font1">
+            <div class="card-front">
+              <img src="./images/hacker6.jpg"/>
+            </div>
+            <div class="card-back">
+              <h2>Guys!</h2>
+              
+            </div>
+          </div>
+        </marquee>
+      <!-- marquee tag ends  here -->
+      </section>
+    <!-- section two for  all about introduction section -->
+    <section id="hero">
+        <div class="hero-container">
+          <h1>Hi, I’m Vikas Ranaout</h1>
+          <p>Aspiring Software Engineer | MERN Stack Developer</p>
+          <a href="#projects" class="btn">View My Projects</a>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+      </section>
+
+      <!-- section-3 all  about background of education -->
+     <section id="section3">
+        <div class="maincard">
+
+            <!-- with card we  can easily -->
+        <div class="card">
+            <div class="card-content graduation">
+                <img  src="./images/graduation.jpg"  alt="graduation image"/>
+              <h4> Vikas Ranaout</h4>
+                <h4>BCA</h4>
+              <p> Bachelor of Computer Applications (BCA) and is currently pursuing an MCA with a focus on development. Your academic journey has been enriched with an interest in backend and full-stack development, particularly involving technologies like Node.js, Express.js, and React.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content postgraduation">
+                <img  src="./images/postgraduation.jpg"  alt="graduation image"/>
+              <h4>Vikas Ranaout</h4>
+              <h4>MCA</h4>
+
+              <p>I am Vikas Ranaout, an MCA (Master of Computer Applications) student at Chandigarh University, I am learning backend technologies  Node.js and MongoDB and is also exploring frontend development alongside JavaScript. His learning journey reflects a balance of theoretical understanding and practical implementation, as evidenced by his involvement in projects like real-time chat applications and static website .</p>
+            </div>
+        </div>
+    </div>
+     </section>
+    
+     <!-- section4   it all about  the  projects  mention  heree -->
+     <section id="projects">
+         <marquee>Our Projects with Team Members </marquee>
+        
+        <div class="projects-container">
+          <div class="project-item">
+            <img src="./images/chatbot.jpg"/>
+            <h3>Chat Applications</h3>
+            <p>A MERN stack-based chat application with chatbot integration. and currently working
+              on learning new technologies like blockchain
+            </p>
+          </div>
+          <!-- seconnd  project  based on   iot -->
+          <div class="project-item">
+            <img src="./images/iot_project.jpg"/>
+            <h3>LED Controller</h3>
+            <p>An IoT project using ESP8266 for LED pattern control.IoT project using ESP8266 for LED pattern control and with adruino</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer section  is  here  where  the  footer code is written in which contact form -->
+
+      <footer id="footer">
+        <div class="footer-bar">
+          <h2>Contact Us</h2>
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <!-- email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+              <!-- to display  highlight  the message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+            <!-- button  section  here -->
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </footer>
+      
+      
+</body>
+</html>
